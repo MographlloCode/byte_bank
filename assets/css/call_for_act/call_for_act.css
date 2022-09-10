@@ -1,1 +1,22 @@
 /* Byte Bank - All rights reserved */
+
+.call-for-action {
+  top: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cfa-text-container {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 3.3rem;
+}
+
+.cfa-horizontal-rule {
+  margin-top: 0.5vh;
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+}
