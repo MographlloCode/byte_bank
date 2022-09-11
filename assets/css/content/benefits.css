@@ -1,0 +1,31 @@
+/* Byte Bank - All rights reserved */
+
+.benefits-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10vh;
+}
+
+.benefits-items-container {
+  margin: 0 8vw 0 3vw;
+}
+
+.benefits-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6vh;
+}
+
+.benefits-text {
+  margin-left: 2vw;
+}
+
+.benefits-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2vh;
+}
+
+.benefits-text p {
+  font-size: 1.2rem;
+}

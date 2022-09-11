@@ -1,0 +1,81 @@
+/* Byte Bank - All rights reserved */
+
+.products-container {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 10vh 5vw;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.cc-title-container {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1.5vh;
+  color: #2c2c2c;
+}
+
+.cc-title-container h3 {
+  font-size: 2rem;
+}
+
+.card-rule {
+  width: 45px;
+  height: 10px;
+  border-radius: 5px;
+  margin-bottom: 0.5vh;
+  margin-right: 0.5vw;
+}
+
+.cc-arrow {
+  margin-top: 5vh;
+  font-size: 3rem;
+}
+
+.standard-card {
+  background: linear-gradient(
+      112.21deg,
+      rgba(253, 50, 253, 0.5) -2.62%,
+      rgba(171, 29, 171, 0.5) 46.73%,
+      rgba(36, 0, 36, 0.5) 104.53%
+    ),
+    #bf405e;
+}
+
+.enterprise-card {
+  background: linear-gradient(
+      112.21deg,
+      rgba(253, 50, 253, 0.5) -2.62%,
+      rgba(171, 29, 171, 0.5) 46.73%,
+      rgba(36, 0, 36, 0.5) 104.53%
+    ),
+    #ff1f00;
+}
+
+.platinum-card {
+  background: linear-gradient(
+      112.21deg,
+      rgba(169, 0, 169, 0.5) -2.62%,
+      rgba(80, 0, 80, 0.5) 46.73%,
+      rgba(0, 0, 0, 0.5) 104.53%
+    ),
+    #000000;
+}
+
+.standard-card-color {
+  color: #bf405e;
+}
+
+.enterprise-card-color {
+  color: #ff1f00;
+}
+
+.platinum-card-color {
+  color: #500050;
+}
