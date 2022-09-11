@@ -3,8 +3,8 @@
 .footer-container {
   flex: 1;
   background: #bf405e;
-  width: 100vw;
   padding: 3%;
+  width: 94.1vw;
 }
 
 .nav-footer {
@@ -16,5 +16,5 @@
 .footer-paragraph {
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  width: 11vw;
+  width: 10vw;
 }
