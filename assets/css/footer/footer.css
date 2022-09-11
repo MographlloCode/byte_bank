@@ -1,1 +1,20 @@
 /* Byte Bank - All rights reserved */
+
+.footer-container {
+  flex: 1;
+  background: #bf405e;
+  width: 100vw;
+  padding: 3%;
+}
+
+.nav-footer {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-paragraph {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  width: 11vw;
+}
