@@ -1,0 +1,37 @@
+/* Byte Bank - All rights reserved */
+
+.who-we-are-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10vh;
+}
+
+.wwa-texts {
+  margin: 0 6vw;
+  color: #2c2c2c;
+}
+
+.wwa-texts a {
+  color: #2c2c2c;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.arrow-checkout {
+  margin-left: 0.5vw;
+}
+
+.wwa-texts h1 {
+  font-size: 4rem;
+  margin-bottom: 4vh;
+}
+
+.wwa-texts p {
+  font-size: 2rem;
+}
+
+.wwa-texts p:last-of-type {
+  font-size: 2rem;
+  margin-bottom: 4vh;
+}

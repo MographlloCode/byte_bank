@@ -6,6 +6,14 @@
   font-weight: 300;
 }
 
+.ft-medium {
+  font-weight: 500;
+}
+
 .ft-bold {
   font-weight: 700;
+}
+
+.ft-extrabold {
+  font-weight: 800;
 }
