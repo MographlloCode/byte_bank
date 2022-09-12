@@ -3,19 +3,19 @@
 <h1>An Open Source Bank developed for Smart Minds</h1><br>
 <p>Byte Bank is a personal project based on an idea of a more clear digital
 banking solution, it brings inovation, modernity and a touch of tech aiming
-to help you at every area of your life.</p><br>
+to help you at every area of your life.</p>
 
-<h3>Technologies</h3><br>
+<h3>Technologies</h3>
 
-<p>UI → Figma</p><br>
-<p>Front-End → HTML, CSS and Javascript</p>
+<p>UI → Figma</p>
+<p>Front-End → HTML, CSS and Javascript</p><br>
 
-<h3>What is going on?</h3><br>
+<h3>What is going on?</h3>
 <p>Byte Bank is currently at development and untill now there is only one stage to
-develop:</p>
+develop:</p><br>
 
 <h4>Stage 1 → Front-End</h4>
-<p><strong>Development of Landing Page</strong> | Status: Lack of responsiviness</p>
+<p><strong>Development of Landing Page</strong> | Status: Lack of responsiviness</p><br>
 
 <h4>Next Stage → ?</h4>
 
