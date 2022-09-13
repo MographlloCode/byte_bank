@@ -1,37 +1,123 @@
 /* Byte Bank - All rights reserved */
 
-.who-we-are-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10vh;
-}
-
 .wwa-texts {
-  margin: 0 6vw;
   color: #2c2c2c;
+  margin: 0 6vw;
 }
 
 .wwa-texts a {
   color: #2c2c2c;
   text-decoration: none;
-  font-size: 2rem;
 }
 
 .arrow-checkout {
   margin-left: 0.5vw;
 }
 
-.wwa-texts h1 {
-  font-size: 4rem;
-  margin-bottom: 4vh;
+/* For extremely small screen devices (375px and below) */
+@media only screen and (min-width: 375px) {
+  .who-we-are-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 5vh;
+  }
+
+  .wwa-texts a {
+    font-size: 1.5rem;
+  }
+
+  .wwa-texts h1 {
+    font-size: 3rem;
+    margin: 6vh 0;
+  }
+
+  .wwa-texts p {
+    font-size: 1.5rem;
+  }
+
+  .wwa-texts p:last-of-type {
+    margin-bottom: 6vh;
+  }
+
+  .wwa-pic {
+    height: 40vh;
+  }
 }
 
-.wwa-texts p {
-  font-size: 2rem;
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .who-we-are-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 10vh;
+  }
+
+  .wwa-texts p:last-of-type {
+    margin-bottom: 4vh;
+  }
+
+  .wwa-pic {
+    height: 50vh;
+  }
 }
 
-.wwa-texts p:last-of-type {
-  font-size: 2rem;
-  margin-bottom: 4vh;
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  .who-we-are-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 10vh;
+  }
+
+  .wwa-texts h1 {
+    font-size: 3rem;
+    margin: 8vh 0;
+  }
+}
+
+/* Big screen devices (1000px and above) */
+@media only screen and (min-width: 1000px) {
+  .who-we-are-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+  }
+
+  .wwa-pic {
+    height: 50vh;
+  }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .who-we-are-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+  }
+
+  .wwa-texts a {
+    font-size: 2rem;
+  }
+
+  .wwa-texts h1 {
+    font-size: 4rem;
+    margin-bottom: 4vh;
+  }
+
+  .wwa-texts p {
+    font-size: 2rem;
+  }
+
+  .wwa-pic {
+    height: 60vh;
+  }
 }

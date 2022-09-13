@@ -1,31 +1,104 @@
 /* Byte Bank - All rights reserved */
 
-.benefits-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10vh;
+/* For extremely small screen devices (375px and below) */
+@media only screen and (min-width: 375px) {
+  .benefits-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+  }
+
+  .bnft-pic {
+    display: none;
+  }
+
+  .benefits-items-container {
+    margin: 5vh 0 5vh 0;
+  }
+
+  .benefits-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6vh;
+  }
+
+  .benefits-text {
+    margin-left: 4vw;
+  }
+
+  .benefits-text h2 {
+    font-size: 1.7rem;
+    margin-bottom: 2vh;
+  }
+
+  .benefits-text p {
+    font-size: 1rem;
+  }
 }
 
-.benefits-items-container {
-  margin: 0 8vw 0 3vw;
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .benefits-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4vh;
+  }
+
+  .benefits-text h2 {
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+
+  .benefits-text p {
+    font-size: 1.3rem;
+  }
 }
 
-.benefits-item {
-  display: flex;
-  align-items: center;
-  margin-bottom: 6vh;
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
 }
 
-.benefits-text {
-  margin-left: 2vw;
+/* Big screen devices (1000px and above) */
+@media only screen and (min-width: 1000px) {
 }
 
-.benefits-text h2 {
-  font-size: 2.5rem;
-  margin-bottom: 2vh;
-}
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .benefits-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+  }
 
-.benefits-text p {
-  font-size: 1.2rem;
+  .bnft-pic {
+    display: block;
+    height: 50vh;
+  }
+
+  .benefits-items-container {
+    margin: 0 8vw 0 3vw;
+  }
+
+  .benefits-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6vh;
+  }
+
+  .benefits-text {
+    margin-left: 2vw;
+  }
+
+  .benefits-text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2vh;
+  }
+
+  .benefits-text p {
+    font-size: 1.2rem;
+  }
 }

@@ -8,65 +8,70 @@
   <!-- IE Compatible -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <!-- Viewport Meta -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>byte_</title>
   <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/imgs/favicon.svg" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/imgs/favicon.svg" type="image/x-icon">
   <!-- Reset CSS -->
-  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/reset.css">
   <!-- Fontawesome -->
-  <link rel="stylesheet" href="/assets/fontawesome/css/all.css">
+  <link rel="stylesheet" href="./assets/fontawesome/css/all.css">
   <!-- Local • General Styles -->
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <!-- Local • Nav Styles -->
-  <link rel="stylesheet" href="/assets/css/nav/nav.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
   <!-- Local • Menu Styles -->
-  <link rel="stylesheet" href="/assets/css/nav/menu/menu.css">
-  <!-- Local • Call for Action Styles -->
-  <link rel="stylesheet" href="/assets/css/call_for_act/call_for_act.css">
+  <link rel="stylesheet" href="./assets/css/nav/menu/menu.css">
   <!-- Local • Content Styles -->
-  <link rel="stylesheet" href="/assets/css/content/content.css">
-  <link rel="stylesheet" href="/assets/css/content/who-we-are.css">
-  <link rel="stylesheet" href="/assets/css/content/benefits.css">
-  <link rel="stylesheet" href="/assets/css/content/products.css">
-  <link rel="stylesheet" href="/assets/css/content/carreers.css">
+  <link rel="stylesheet" href="./assets/css/content/content.css">
+  <link rel="stylesheet" href="./assets/css/content/call_for_act.css">
+  <link rel="stylesheet" href="./assets/css/content/who-we-are.css">
+  <link rel="stylesheet" href="./assets/css/content/benefits.css">
+  <link rel="stylesheet" href="./assets/css/content/products.css">
+  <link rel="stylesheet" href="./assets/css/content/carreers.css">
   <!-- Local • Footer Styles -->
-  <link rel="stylesheet" href="/assets/css/footer/footer.css">
+  <link rel="stylesheet" href="./assets/css/footer/footer.css">
   <!-- Local • Font-Styles -->
-  <link rel="stylesheet" href="assets/css/fonts/font-weights.css">
+  <link rel="stylesheet" href="./assets/css/fonts/font-weights.css">
 </head>
 
 <body>
-  <header id="top-page">
+  <header id="top-page" class="page-header">
     <nav id="navigation-bar" class="nav-bar">
-      <a href="#"><img src="assets/imgs/byte_logo.svg" alt="byte bank logo, letter b white and minimalist" class="logo"></a>
-      <ul class="menu-list">
-        <li class="menu-link"><a href="#products">products_</a></li>
-        <li class="menu-link"><a href="#benefits">benefits_</a></li>
-        <li class="menu-link"><a href="#who-we-are">who we are_</a></li>
-        <li class="menu-link"><a href="#carreers">carreers_</a></li>
-      </ul>
-      <a href="#" class="claim-btn">claim your card</a>
+      <div class="nav-content">
+        <a href="#"><img src="./assets/imgs/byte_logo_color.svg" alt="byte bank logo, letter b white and minimalist" class="logo"></a>
+        <input type="checkbox" name="menu-check" id="menu-check" onclick="showMenu()">
+        <label for="menu-check">
+          <i class="fa-solid fa-bars hamburger-menu-btn"></i>
+        </label>
+        <div class="menu-and-claim" id="menu-and-claim">
+          <ul class="menu-list" id="menu-list">
+            <li class="menu-link"><a href="#products">products_</a></li>
+            <li class="menu-link"><a href="#benefits">benefits_</a></li>
+            <li class="menu-link"><a href="#who-we-are">who we are_</a></li>
+            <li class="menu-link"><a href="#carreers">carreers_</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
-    <div id="call-for-action" class="call-for-action">
+
+  </header>
+  <main id="content" class="page-main">
+    <section id="call-for-action" class="call-for-action">
       <div class="cfa-text-container">
         <h1 class="ft-bold">Open Source</h1>
         <h1 class="ft-bold">bank <span class="ft-extralight">developed</span></h1>
         <h1 class="ft-bold"><span class="ft-extralight">for </span>smart minds</h1>
       </div>
-      <img src="assets/imgs/content/card_main.png" alt="Byte Bank Cards">
+      <img class="cfa-cards" src="./assets/imgs/content/card_main.png" alt="Byte Bank Cards">
       <div class="cfa-text-container">
         <div>
           <h1 class=" ft-bold">Get Started <i class="fa-solid fa-arrow-right"></i></h1>
           <div class="cfa-horizontal-rule"></div>
         </div>
       </div>
-    </div>
-  </header>
-  <main id="content">
+    </section>
     <section id="who-we-are">
       <div class="who-we-are-container">
-        <img src="assets/imgs/content/important_top.png" alt="Man using a smartphone">
+        <img class="wwa-pic" src="./assets/imgs/content/important_top.png" alt="Man using a smartphone">
         <div class="wwa-texts">
           <h1 class="ft-bold">Headline<span class="ft-extrabold">_</span></h1>
           <p class="ft-light">Text with some infos that could</p>
@@ -80,7 +85,7 @@
       <div class="benefits-container">
         <div class="benefits-items-container">
           <div class="benefits-item">
-            <img src="assets/imgs/icons/payments_process.svg" alt="icon of payment process">
+            <img src="./assets/imgs/icons/payments_process.svg" alt="icon of payment process">
             <div class="benefits-text">
               <h2 class="ft-bold">Headline<span class="ft-extrabold">_</span></h2>
               <p class="ft-light">Text with some infos that could</p>
@@ -89,7 +94,7 @@
             </div>
           </div>
           <div class="benefits-item">
-            <img src="assets/imgs/icons/credit_card.svg" alt="icon of a credit card">
+            <img src="./assets/imgs/icons/credit_card.svg" alt="icon of a credit card">
             <div class="benefits-text">
               <h2 class="ft-bold">Headline<span class="ft-extrabold">_</span></h2>
               <p class="ft-light">Text with some infos that could</p>
@@ -98,7 +103,7 @@
             </div>
           </div>
           <div class="benefits-item">
-            <img src="assets/imgs/icons/phone_&_charts.svg" alt="icon of a phone & charts">
+            <img src="./assets/imgs/icons/phone_&_charts.svg" alt="icon of a phone & charts">
             <div class="benefits-text">
               <h2 class="ft-bold">Headline<span class="ft-extrabold">_</span></h2>
               <p class="ft-light">Text with some infos that could</p>
@@ -107,7 +112,7 @@
             </div>
           </div>
         </div>
-        <img src="assets/imgs/content/cards_and_message.png" alt="products of byte bank and message">
+        <img class="bnft-pic" src="./assets/imgs/content/cards_and_message.png" alt="products of byte bank and message">
       </div>
     </section>
     <section id="products">
@@ -117,7 +122,7 @@
             <div class="card-rule standard-card"></div>
             <h3 class="cc-title ft-semibold">Standard</h3>
           </div>
-          <img src="assets/imgs/credit_cards/standard_cc.png" alt="standard credit card">
+          <img src="./assets/imgs/credit_cards/standard_cc.png" alt="standard credit card">
           <a href="#" class="ft-bold"><i class="fa-solid fa-arrow-right cc-arrow standard-card-color"></i></a>
         </div>
         <div class="product">
@@ -125,7 +130,7 @@
             <div class="card-rule enterprise-card"></div>
             <h3 class="cc-title ft-semibold">Enterprise</h3>
           </div>
-          <img src="assets/imgs/credit_cards/entrprise_cc.png" alt="enterprise credit card">
+          <img src="./assets/imgs/credit_cards/entrprise_cc.png" alt="enterprise credit card">
           <a href="#" class="ft-bold"><i class="fa-solid fa-arrow-right cc-arrow enterprise-card-color"></i></a>
         </div>
         <div class="product">
@@ -133,7 +138,7 @@
             <div class="card-rule platinum-card"></div>
             <h3 class="cc-title ft-semibold">Platinum</h3>
           </div>
-          <img src="assets/imgs/credit_cards/platinum_cc.png" alt="platinum credit card">
+          <img src="./assets/imgs/credit_cards/platinum_cc.png" alt="platinum credit card">
           <a href="#" class="ft-bold"><i class="fa-solid fa-arrow-right cc-arrow platinum-card-color"></i></a>
         </div>
       </div>
@@ -154,7 +159,7 @@
             <a href="" class="ft-bold">Seek for positions <i class="fa-solid fa-solid fa-arrow-right carreers-arrow"></i></a>
           </div>
           <div class="carrers-comments">
-            <img src="assets/imgs/content/girl_from_carreers.png" alt="black woman with afro hair">
+            <img src="./assets/imgs/content/girl_from_carreers.png" alt="black woman with afro hair">
             <div class="carrers-comments-texts">
               <div class="comments-titles">
                 <h4 class="ft-semibold">Mayara Riana</h4>
@@ -167,23 +172,24 @@
             </div>
           </div>
         </div>
-        <img src="assets/imgs/content/carreers_pic.png" alt="group of people working on a project">
+        <img class="crr_pic" src="./assets/imgs/content/carreers_pic.png" alt="group of people working on a project">
       </div>
     </section>
   </main>
   <footer id="footer" class="footer-container">
+    <a href="#"><img src="./assets/imgs/byte_logo.svg" alt="byte bank logo, letter b white and minimalist" class="logo"></a>
     <nav id="navigation-bar" class="nav-footer">
-      <a href="#"><img src="assets/imgs/byte_logo.svg" alt="byte bank logo, letter b white and minimalist" class="logo"></a>
       <ul class="menu-list">
         <li class="menu-link"><a href="#products">products_</a></li>
         <li class="menu-link"><a href="#benefits">benefits_</a></li>
         <li class="menu-link"><a href="#who-we-are">who we are_</a></li>
         <li class="menu-link"><a href="#carreers">carreers_</a></li>
       </ul>
-      <p class="footer-paragraph">All contact informations and telephone numbers can be found in the verse of your credit card, if you lost it or for any reasons can not acess your card, please call <span class="ft-extrabold">+353 0987-0987</span></p>
     </nav>
+    <p class="footer-paragraph">All contact informations and telephone numbers can be found in the verse of your credit card, if you lost it or for any reasons can not acess your card, please call <span class="ft-extrabold">+353 0987-0987</span></p>
   </footer>
-  <script src="assets/fontawesome/js/all.js"></script>
+  <script src="./assets/fontawesome/js/all.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

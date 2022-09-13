@@ -1,0 +1,121 @@
+/* Byte Bank - All rights reserved */
+
+.call-for-action {
+  background: linear-gradient(
+      288.31deg,
+      rgba(0, 0, 0, 0.5) -16.06%,
+      rgba(0, 0, 0, 0) 103.5%
+    ),
+    #bf405e;
+}
+
+.cfa-text-container {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  font-size: 3.3rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.cfa-horizontal-rule {
+  margin-top: 0.5vh;
+  width: 40px;
+  height: 5px;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* For extremely small screen devices (375px and below) */
+@media only screen and (min-width: 375px) {
+  .call-for-action {
+    padding: 18vh 5vw 12vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .cfa-cards {
+    height: 40vh;
+  }
+
+  .cfa-text-container {
+    font-size: 1.5rem;
+  }
+
+  .cfa-text-container:first-child {
+    margin-bottom: 2vh;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .call-for-action {
+    padding: 16vh 5vw 12vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .cfa-cards {
+    height: 50vh;
+  }
+
+  .cfa-text-container {
+    font-size: 2rem;
+  }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  .call-for-action {
+    padding: 16vh 5vw 12vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+
+  .cfa-cards {
+    height: 50vh;
+  }
+
+  .cfa-text-container {
+    font-size: 2rem;
+  }
+}
+
+/* Big screen devices (1000px and above) */
+@media only screen and (min-width: 1000px) {
+  .call-for-action {
+    padding: 12vh 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row;
+  }
+
+  .cfa-cards {
+    height: 50vh;
+  }
+
+  .cfa-text-container {
+    font-size: 2.5rem;
+  }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .call-for-action {
+    padding-top: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100vw;
+    max-height: 100vh;
+  }
+
+  .cfa-cards {
+    height: 70vh;
+  }
+}

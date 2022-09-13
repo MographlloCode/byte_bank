@@ -1,5 +1,32 @@
 /* Byte Bank - All rights reserved */
 
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  align-items: center;
+  background: white;
+  /* background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 50px 50px; */
+  display: flex;
+  justify-content: center;
+  padding: 2vh 2vw;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
 .menu-list {
   list-style-type: none;
   display: flex;
@@ -11,7 +38,7 @@
 }
 
 .menu-link a {
-  color: #fff;
+  color: #a63852;
   font-family: "Montserrat", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
@@ -20,17 +47,103 @@
 }
 
 .menu-link a:hover {
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.55);
+  color: #5f1929;
 }
 
-.claim-btn {
-  background: #ffffff;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.15);
-  border-radius: 50px;
-  color: #a63852;
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
-  padding: 1% 2%;
-  text-decoration: none;
+/* For extremely small screen devices (375px and below) */
+@media only screen and (min-width: 375px) {
+  .nav-content {
+    padding: 0 5vw;
+  }
+
+  .hamburger-menu-btn {
+    display: flex;
+    font-size: 1.5rem;
+    color: #a63852;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .menu-link {
+    margin: 2vh;
+  }
+
+  .menu-link:first-child {
+    margin-top: 5vh;
+  }
+
+  .menu-link a {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  #menu-check {
+    display: none;
+  }
+
+  .menu-and-claim {
+    display: none;
+    position: fixed;
+    top: 9vh;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background: #a63852;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .menu-and-claim {
+    top: 9vh;
+  }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Big screen devices (1000px and above) */
+@media only screen and (min-width: 1000px) {
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .nav-content {
+    padding: 1vh 5vw;
+  }
+
+  .hamburger-menu-btn {
+    display: flex;
+  }
+
+  .menu-list {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .menu-link {
+    margin: 2vh;
+  }
+
+  .menu-link:first-child {
+    margin-top: 5vh;
+  }
+
+  .menu-link a {
+    font-size: 1.3rem;
+  }
+
+  .menu-and-claim {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+  }
 }

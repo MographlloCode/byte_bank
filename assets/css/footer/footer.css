@@ -1,20 +1,90 @@
 /* Byte Bank - All rights reserved */
 
 .footer-container {
-  flex: 1;
   background: #bf405e;
-  padding: 3%;
-  width: 94.1vw;
+  display: flex;
+  flex: 1;
 }
 
-.nav-footer {
-  align-items: center;
-  display: flex;
-  justify-content: space-around;
+.nav-footer ul li a {
+  color: #fff;
 }
 
 .footer-paragraph {
   color: #fff;
   font-family: "Montserrat", sans-serif;
-  width: 10vw;
+}
+
+/* For extremely small screen devices (375px and below) */
+@media only screen and (min-width: 375px) {
+  .footer-container {
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column wrap;
+  }
+
+  .nav-footer {
+    margin: 5vh 0;
+  }
+
+  .nav-footer .menu-list {
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+
+  .nav-footer .menu-list .menu-link {
+    padding: 1vh 0;
+  }
+
+  .nav-footer .menu-list .menu-link a {
+    font-size: 1.5rem;
+  }
+
+  .footer-paragraph {
+    width: 50vw;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .footer-container {
+    padding: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .nav-footer {
+    margin: 0;
+  }
+
+  .nav-footer .menu-list {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .nav-footer .menu-list .menu-link {
+    padding: 0 2vw;
+  }
+
+  .footer-paragraph {
+    width: 10vw;
+  }
 }
